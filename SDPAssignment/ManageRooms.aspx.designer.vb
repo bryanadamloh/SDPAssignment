@@ -11,113 +11,86 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Register
+Partial Public Class Reservation
     
     '''<summary>
-    '''salutation control.
+    '''RoomType control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents salutation As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents RoomType As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''FullName control.
+    '''RoomDescription control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents FullName As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents RoomDescription As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''CheckIn control.
+    '''RoomID control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents CheckIn As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents RoomID As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''CheckOut control.
+    '''RoomType1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents CheckOut As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents RoomType1 As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''Comment control.
+    '''RoomDescription1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Comment As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents RoomDescription1 As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''CardName control.
+    '''RoomID1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents CardName As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents RoomID1 As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''CardNum control.
+    '''RoomType2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents CardNum As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents RoomType2 As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''Address control.
+    '''RoomDescription2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Address As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents RoomDescription2 As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''CVC control.
+    '''RoomID2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents CVC As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''Month control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Month As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''Year control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Year As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''Amount control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Amount As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents RoomID2 As Global.System.Web.UI.WebControls.TextBox
 End Class
