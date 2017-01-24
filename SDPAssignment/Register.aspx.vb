@@ -22,10 +22,6 @@
         da = New OleDb.OleDbDataAdapter(sql, con)
         da.Fill(ds, "Customer")
 
-        FName.Text = ds.Tables("CustFName").Rows(0).Item(1)
-    End Sub
-
-    Protected Sub CreateUser_Click(sender As Object, e As EventArgs)
 
     End Sub
 
