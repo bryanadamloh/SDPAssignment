@@ -14,110 +14,56 @@ Option Explicit On
 Partial Public Class Register
     
     '''<summary>
-    '''salutation control.
+    '''FName control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents salutation As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents FName As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''FullName control.
+    '''LName control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents FullName As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents LName As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''CheckIn control.
+    '''Email control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents CheckIn As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents Email As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''CheckOut control.
+    '''Username control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents CheckOut As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents Username As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''Comment control.
+    '''Password control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Comment As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents Password As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''CardName control.
+    '''ConfirmPassword control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents CardName As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''CardNum control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents CardNum As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''Address control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Address As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''CVC control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents CVC As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''Month control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Month As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''Year control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Year As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''Amount control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Amount As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ConfirmPassword As Global.System.Web.UI.WebControls.TextBox
 End Class

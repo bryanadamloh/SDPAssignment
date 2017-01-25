@@ -1,4 +1,7 @@
-﻿Public Class Register
+﻿Imports System.Data.OleDb
+
+
+Public Class Register
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -8,8 +11,8 @@
         Dim dbSource As String
         Dim sql As String
 
-        dbProvider = "PROVIDER = MICROSOFT.ACE.OLEDB.12.0"
-        dbSource = "Data Source=|Data Directory|\OrientHotel.mdb"
+        dbProvider = "PROVIDER = MICROSOFT.JET.OLEDB.4.0"
+        dbSource = "Data Source=|Data Directory|OrientHotel.mdb"
 
         con.ConnectionString = dbProvider & dbSource
 
@@ -21,6 +24,8 @@
         sql = "SELECT * FROM OrientHotel "
         da = New OleDb.OleDbDataAdapter(sql, con)
         da.Fill(ds, "Customer")
+
+        FName.Text = ds.Tables("Customer").Rows(1).Item("CustFName")
 
 
     End Sub
