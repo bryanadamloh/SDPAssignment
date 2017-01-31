@@ -221,6 +221,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Login.aspx" />
+    <Content Include="ManageReservation.aspx" />
     <Content Include="Payment.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="ManageRooms.aspx" />
@@ -295,6 +296,13 @@
     </Compile>
     <Compile Include="Login.aspx.vb">
       <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ManageReservation.aspx.designer.vb">
+      <DependentUpon>ManageReservation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageReservation.aspx.vb">
+      <DependentUpon>ManageReservation.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
