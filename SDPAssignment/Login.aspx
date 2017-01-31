@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Login" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Customer.Master" CodeBehind="Register.aspx.vb" Inherits="SDPAssignment.Register" %>
+﻿<%@ Page Title="Login" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Customer.Master" CodeBehind="Login.aspx.vb" Inherits="SDPAssignment.Login" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 <style>
@@ -37,13 +37,13 @@ h2{
                     <hr class="colorgraph" />
 
                     <div class="form-group">
-                        <asp:TextBox runat="server" ID="Username" CssClass="form-control input-lg" placeholder="Username" />
-                        <asp:RequiredFieldValidator runat="server" ControlToValidate="Username" CssClass="text-danger" ErrorMessage="Username field is required." />
+                        <asp:TextBox runat="server" ID="txtuser" CssClass="form-control input-lg" placeholder="Username" />
+                        <asp:RequiredFieldValidator runat="server" ControlToValidate="txtuser" CssClass="text-danger" ErrorMessage="Username field is required." />
                     </div>
 
                     <div class="form-group">
-                        <asp:TextBox runat="server" ID="Password" CssClass="form-control input-lg" TextMode="Password" placeholder="Password" />
-                        <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="text-danger" ErrorMessage="Password field is required." />
+                        <asp:TextBox runat="server" ID="txtpass" CssClass="form-control input-lg" TextMode="Password" placeholder="Password" />
+                        <asp:RequiredFieldValidator runat="server" ControlToValidate="txtpass" CssClass="text-danger" ErrorMessage="Password field is required." />
                     </div>
 
                     <div class="form-group">
@@ -57,7 +57,7 @@ h2{
                     <hr class="colorgraph" />
                     <div class="row">
                         <div class="col-md-6">
-                            <asp:Button runat="server" OnClick="LogIn" Text="Log In" CssClass="btn btn-lg btn-success btn-block" />
+                            <asp:Button runat="server" OnClick="Login_Click" Text="Log In" CssClass="btn btn-lg btn-success btn-block" />
                         </div>
                         <div class="col-md-6">
                             <a href="Register.aspx" class="btn btn-lg btn-primary btn-block">Register</a>

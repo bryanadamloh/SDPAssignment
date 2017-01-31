@@ -14,29 +14,29 @@ Option Explicit On
 Partial Public Class Contact
     
     '''<summary>
-    '''name control.
+    '''txtname control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents name As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtname As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''email control.
+    '''txtemail control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents email As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtemail As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''comments control.
+    '''txtcomment control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents comments As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtcomment As Global.System.Web.UI.WebControls.TextBox
 End Class

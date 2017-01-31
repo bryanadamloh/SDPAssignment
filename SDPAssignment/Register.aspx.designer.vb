@@ -12,58 +12,58 @@ Option Explicit On
 
 
 Partial Public Class Register
-    
+
     '''<summary>
-    '''FName control.
+    '''txtFName control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents FName As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents txtFName As Global.System.Web.UI.WebControls.TextBox
+
     '''<summary>
-    '''LName control.
+    '''txtLName control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LName As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents txtLName As Global.System.Web.UI.WebControls.TextBox
+
     '''<summary>
-    '''Email control.
+    '''txtEmail control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Email As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents txtEmail As Global.System.Web.UI.WebControls.TextBox
+
     '''<summary>
-    '''Username control.
+    '''txtUsername control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Username As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents txtUsername As Global.System.Web.UI.WebControls.TextBox
+
     '''<summary>
-    '''Password control.
+    '''txtPassword control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Password As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents txtPassword As Global.System.Web.UI.WebControls.TextBox
+
     '''<summary>
-    '''ConfirmPassword control.
+    '''txtConfirmPassword control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ConfirmPassword As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtConfirmPassword As Global.System.Web.UI.WebControls.TextBox
 End Class

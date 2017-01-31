@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Customer.Master" CodeBehind="Contact.aspx.vb" Inherits="SDPAssignment.Contact" %>
+﻿<%@ Page Title="Contact Us" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Customer.Master" CodeBehind="Contact.aspx.vb" Inherits="SDPAssignment.Contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <style>
@@ -24,16 +24,16 @@ h2 {
     <div class="col-md-7">
       <div class="row">
         <div class="col-md-6 form-group">
-          <asp:Textbox runat="server" Cssclass="form-control" id="name" placeholder="Name" type="text" />
+          <asp:Textbox runat="server" Cssclass="form-control" id="txtname" placeholder="Name" type="text" />
         </div>
         <div class="col-md-6 form-group">
-          <asp:Textbox runat="server" Cssclass="form-control" id="email" placeholder="Email" type="email" />
+          <asp:Textbox runat="server" Cssclass="form-control" id="txtemail" placeholder="Email" type="email" />
         </div>
       </div>
-      <asp:Textbox runat="server" Cssclass="form-control" id="comments" placeholder="Comment" rows="5" TextMode="MultiLine" /><br>
+      <asp:Textbox runat="server" Cssclass="form-control" id="txtcomment" placeholder="Comment" rows="5" TextMode="MultiLine" /><br>
       <div class="row">
         <div class="col-md-12 form-group">
-          <button class="btn btn-primary btn-block" type="submit">Send</button>
+          <asp:Button runat="server" CssClass="btn btn-primary btn-block" OnClick="Submit" Text="Submit" />
         </div>
       </div> 
     </div>

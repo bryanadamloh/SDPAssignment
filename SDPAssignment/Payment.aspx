@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Payment" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Customer.Master" CodeBehind="Register.aspx.vb" Inherits="SDPAssignment.Register" %>
+﻿<%@ Page Title="Payment" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Customer.Master" CodeBehind="Payment.aspx.vb" Inherits="SDPAssignment.Payment" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <style>
 .bg-grey {
@@ -14,17 +14,8 @@
                 
                 <form>
                     <br>
-                    <div class="col-md-4 form-group">
-                        <asp:Label runat="server" AssociatedControlID="salutation" CssClass="control-label">Salutation</asp:Label>
-                        <asp:DropDownList runat="server" ID="salutation" CssClass="form-control">
-                            <asp:ListItem Text="Select Salutation"></asp:ListItem>
-                            <asp:ListItem Text="Mr."></asp:ListItem>
-                            <asp:ListItem Text="Mrs."></asp:ListItem>
-                            <asp:ListItem Text="Miss"></asp:ListItem>
-                        </asp:DropDownList>
-                    </div>
 
-                    <div class="col-md-8 form-group">
+                    <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="FullName" CssClass="control-label">Full Name</asp:Label>
                         <asp:TextBox runat="server" ID="FullName" CssClass="form-control" placeholder="Full Name"></asp:TextBox>
                     </div>

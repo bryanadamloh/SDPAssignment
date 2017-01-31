@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Customer.Master" CodeBehind="About.aspx.vb" Inherits="SDPAssignment.About" %>
+﻿<%@ Page Title="About Us" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Customer.Master" CodeBehind="About.aspx.vb" Inherits="SDPAssignment.About" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <style>
 .bg-grey {

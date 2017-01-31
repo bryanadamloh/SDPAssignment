@@ -10,35 +10,33 @@
 Option Strict On
 Option Explicit On
 
-Namespace WebApplication1
+
+Partial Public Class Login
     
-    Partial Public Class Login
-        
-        '''<summary>
-        '''Username control.
-        '''</summary>
-        '''<remarks>
-        '''Auto-generated field.
-        '''To modify move field declaration from designer file to code-behind file.
-        '''</remarks>
-        Protected WithEvents Username As Global.System.Web.UI.WebControls.TextBox
-        
-        '''<summary>
-        '''Password control.
-        '''</summary>
-        '''<remarks>
-        '''Auto-generated field.
-        '''To modify move field declaration from designer file to code-behind file.
-        '''</remarks>
-        Protected WithEvents Password As Global.System.Web.UI.WebControls.TextBox
-        
-        '''<summary>
-        '''RememberMe control.
-        '''</summary>
-        '''<remarks>
-        '''Auto-generated field.
-        '''To modify move field declaration from designer file to code-behind file.
-        '''</remarks>
-        Protected WithEvents RememberMe As Global.System.Web.UI.WebControls.CheckBox
-    End Class
-End Namespace
+    '''<summary>
+    '''txtuser control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtuser As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''txtpass control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtpass As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''RememberMe control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RememberMe As Global.System.Web.UI.WebControls.CheckBox
+End Class
