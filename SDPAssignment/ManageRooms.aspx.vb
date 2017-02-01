@@ -21,10 +21,11 @@ Public Class Reservation
                 conn.Open()
                 Using cmd As New OleDbCommand(SqlString, conn)
                     cmd.CommandType = CommandType.Text
-                    cmd.Parameters.AddWithValue("@RoomType", RoomType)
-                    cmd.Parameters.AddWithValue("@RoomDescription", RoomDescription)
+                    cmd.Parameters.AddWithValue("@RoomType", RoomType.Text)
+                    cmd.Parameters.AddWithValue("@RoomDescription", RoomDescription.Text)
                     cmd.ExecuteNonQuery()
                     MsgBox("New Hotel Room created.")
+                    Response.Redirect("ManageRooms.aspx")
                 End Using
                 conn.Close()
             End Using
