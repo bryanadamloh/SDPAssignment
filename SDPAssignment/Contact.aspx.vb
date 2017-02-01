@@ -28,6 +28,7 @@ Public Class Contact
                     MsgBox("Your inquiries has been sent! Thank You!")
                     Response.Redirect("Default.aspx")
                 End Using
+                conn.Close()
             End Using
         End If
     End Sub
