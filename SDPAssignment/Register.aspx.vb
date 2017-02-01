@@ -29,7 +29,7 @@ Public Class Register
 
                     Using reader As OleDbDataReader = cmd.ExecuteReader()
                         If reader.HasRows Then
-                            MsgBox("User already exist!")
+                            MsgBox("User already exists!")
                         Else
                             Dim SqlString1 As String = "Insert Into Customer (CustFName, CustLName, CustEmail, CustUsername, CustPassword) Values (@CustFName, @CustLName, @CustEmail, @CustUsername, @CustPassword)"
                             Dim cmd1 As OleDbCommand = New OleDbCommand(SqlString1, conn)

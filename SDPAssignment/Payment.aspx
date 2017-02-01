@@ -87,7 +87,7 @@
                                     <br />
 
                                     <div class="form-group">
-                                        <asp:Button runat="server" CssClass="btn btn-primary btn-block" Text="Continue →" />
+                                        <asp:Button runat="server" OnClick="card_Click" CssClass="btn btn-primary btn-block" Text="Continue →" />
                                     </div>
                                 </form>
 
@@ -104,7 +104,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <asp:Button runat="server" CssClass="btn btn-primary btn-block" Text="Continue →" />
+                                        <asp:Button runat="server" OnClick="deposit_Click" CssClass="btn btn-primary btn-block" Text="Continue →" />
                                     </div>
                                 </form>
 
