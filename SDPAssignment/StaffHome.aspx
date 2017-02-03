@@ -5,7 +5,7 @@
     background: url(../Images/staffImg.jpg) no-repeat center center;
     width:100%;
     height:100%;
-    padding:90px 90px;
+    padding:100px 100px;
 }
 .jumbotron{
     color:white;

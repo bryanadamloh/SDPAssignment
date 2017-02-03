@@ -1,4 +1,4 @@
-﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site-Customer.master.vb" Inherits="SDPAssignment.Site_Customer" %>
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site-Member.master.vb" Inherits="SDPAssignment.Site_Member" %>
 <%@ Import Namespace="System.Web.Optimization" %>
 <%@ Import Namespace="SDPAssignment" %>
 <%@ Import Namespace="Microsoft.AspNet.Identity" %>
@@ -16,7 +16,7 @@
     <%: Scripts.Render("~/bundles/modernizr") %>
     <webopt:bundlereference runat="server" path="~/Content/bootstrap.min.css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-   
+
 </head>
 <body>
     <form runat="server">
@@ -40,7 +40,7 @@
             </Scripts>
         </asp:ScriptManager>
 
-     <!-- Fixed navbar -->
+        <!-- Fixed navbar -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -54,7 +54,7 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a href="Default.aspx">Home</a></li>
+          <li><a href="Default-Member.aspx">Home</a></li>
           <li><a href="About.aspx">About</a></li>
           <li><a href="Contact.aspx">Contact</a></li>
 
@@ -65,12 +65,10 @@
             <ul class="dropdown-menu">
               <li><a href="roomGallery.aspx">View</a></li>
               <li><a href="bookroom.aspx">Reservations</a></li>
-              <li role="separator" class="divider"></li>
-              <li class="dropdown-header">Membership</li>
-              <li><a href="Login.aspx">Log In</a></li>
-              <li><a href="Register.aspx">Register</a></li>
             </ul>
           </li>
+            <asp:Label runat="server" ID="txtuser" Text="Text" CssClass="navbar-text"></asp:Label>
+            <asp:Button runat="server" OnClick="btnlogout_Click" Text="Logout" CssClass="btn btn-danger navbar-btn" />
          </ul>
       </div>
     </div>
