@@ -79,7 +79,7 @@ hr.style-eight:after {
                             <hr class="colorgraph" />
 
                             <div class="pull-left">
-                                <asp:Button runat="server" CssClass="btn btn-primary" Text="Create" /> 
+                                <asp:Button runat="server" OnClick="CreateRoom" CssClass="btn btn-primary" Text="Create" /> 
                             </div>
                         </form>
                     </div>
