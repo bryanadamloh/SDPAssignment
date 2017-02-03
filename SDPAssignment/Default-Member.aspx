@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Member.Master" CodeBehind="Default-Member.aspx.vb" Inherits="SDPAssignment.Default_Member" %>
+﻿<%@ Page Title="Home Page" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Member.Master" CodeBehind="Default-Member.aspx.vb" Inherits="SDPAssignment.Default_Member" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <style>
 /*Top content*/
