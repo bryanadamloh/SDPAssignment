@@ -207,8 +207,10 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About-Member.aspx" />
     <Content Include="About.aspx" />
     <Content Include="bookroom.aspx" />
+    <Content Include="Contact-Member.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -271,6 +273,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About-Member.aspx.designer.vb">
+      <DependentUpon>About-Member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About-Member.aspx.vb">
+      <DependentUpon>About-Member.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="About.aspx.designer.vb">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
@@ -283,6 +292,13 @@
     </Compile>
     <Compile Include="bookroom.aspx.vb">
       <DependentUpon>bookroom.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Contact-Member.aspx.designer.vb">
+      <DependentUpon>Contact-Member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact-Member.aspx.vb">
+      <DependentUpon>Contact-Member.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Contact.aspx.designer.vb">
