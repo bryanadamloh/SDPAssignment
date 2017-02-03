@@ -22,7 +22,7 @@ h4 {
 
    <div id="about" class="container-fluid" style="padding: 60px 50px;">
   <div class="row">
-      <img class="img-responsive" src="Images/luxury-hotels-lobby-with-luxury-hotel-lobby-plan-7744-wallpapers-hd-home-design-photo.jpg" />
+      <img class="img-responsive" src="Images/luxury-hotels-lobby-with-luxury-hotel-lobby-plan-7744-wallpapers-hd-home-design-photo.jpg" style="width:100%;"/>
     <div class="col-md-12">
       <h2 class="text-center">About Orient Hotel</h2>
       <h4 class="text-center">Founded in 2000. Malaysia's finest hotel & resort located in the heart of the city, Kuala Lumpur.</h4><br>
