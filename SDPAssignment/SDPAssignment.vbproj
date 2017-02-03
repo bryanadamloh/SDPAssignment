@@ -214,7 +214,10 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="CreateRoom.aspx" />
+    <Content Include="Default-Member.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="DeleteRoom.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -226,9 +229,9 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Login.aspx" />
     <Content Include="ManageReservation.aspx" />
+    <Content Include="ModifyRoom.aspx" />
     <Content Include="Payment.aspx" />
     <Content Include="Register.aspx" />
-    <Content Include="ManageRooms.aspx" />
     <Content Include="roomGallery.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -263,6 +266,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="SearchRoom.aspx" />
     <Content Include="StaffHome.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -288,11 +292,32 @@
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="CreateRoom.aspx.designer.vb">
+      <DependentUpon>CreateRoom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateRoom.aspx.vb">
+      <DependentUpon>CreateRoom.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Default-Member.aspx.designer.vb">
+      <DependentUpon>Default-Member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default-Member.aspx.vb">
+      <DependentUpon>Default-Member.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Default.aspx.designer.vb">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.vb">
       <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DeleteRoom.aspx.designer.vb">
+      <DependentUpon>DeleteRoom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteRoom.aspx.vb">
+      <DependentUpon>DeleteRoom.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Login.aspx.designer.vb">
@@ -307,6 +332,13 @@
     </Compile>
     <Compile Include="ManageReservation.aspx.vb">
       <DependentUpon>ManageReservation.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ModifyRoom.aspx.designer.vb">
+      <DependentUpon>ModifyRoom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyRoom.aspx.vb">
+      <DependentUpon>ModifyRoom.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -342,13 +374,6 @@
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="ManageRooms.aspx.designer.vb">
-      <DependentUpon>ManageRooms.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ManageRooms.aspx.vb">
-      <DependentUpon>ManageRooms.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="roomGallery.aspx.designer.vb">
       <DependentUpon>roomGallery.aspx</DependentUpon>
     </Compile>
@@ -356,11 +381,25 @@
       <DependentUpon>roomGallery.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="SearchRoom.aspx.designer.vb">
+      <DependentUpon>SearchRoom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchRoom.aspx.vb">
+      <DependentUpon>SearchRoom.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Site-Customer.Master.designer.vb">
       <DependentUpon>Site-Customer.Master</DependentUpon>
     </Compile>
     <Compile Include="Site-Customer.Master.vb">
       <DependentUpon>Site-Customer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site-Member.Master.designer.vb">
+      <DependentUpon>Site-Member.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site-Member.Master.vb">
+      <DependentUpon>Site-Member.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site-Staff.Master.designer.vb">
@@ -404,6 +443,7 @@
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <Content Include="Site-Customer.Master" />
     <Content Include="Site-Staff.Master" />
+    <Content Include="Site-Member.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -28,7 +28,7 @@ Public Class Login
                 End Using
             End Using
             If result > 0 Then
-                Response.Redirect("Default.aspx")
+                Response.Redirect("Default-Member.aspx")
             Else
                 MsgBox("Invalid Username and Password!")
             End If
