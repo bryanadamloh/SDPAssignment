@@ -43,29 +43,24 @@ hr.style-eight:after {
                     <hr class="colorgraph" />
 
                     <div class="form-group">
-                            <asp:Label runat="server" AssociatedControlID="RoomID1" CssClass="control-label">Enter Room ID</asp:Label>
-                            <asp:TextBox runat="server" ID="RoomID1" CssClass="form-control" />
+                            <asp:Label runat="server" AssociatedControlID="RoomID" CssClass="control-label">Enter Room ID</asp:Label>
+                            <asp:TextBox runat="server" ID="RoomID" CssClass="form-control" />
                     </div>
 
-                        <div class="form-group">
-                            <asp:Label runat="server" AssociatedControlID="RoomType2" CssClass="control-label">Room Type</asp:Label>
-                            <asp:DropDownList runat="server" ID="RoomType2" CssClass="form-control" Enabled="false" >
-                            <asp:ListItem Text="Select Room Type"></asp:ListItem>
-                            <asp:ListItem Text="Family Suite"></asp:ListItem>
-                            <asp:ListItem Text="Double Suite"></asp:ListItem>
-                            <asp:ListItem Text="Queen Suite"></asp:ListItem>
-                        </asp:DropDownList>
-                        </div>
+                    <div class="form-group">
+                        <asp:Label runat="server" AssociatedControlID="RoomType" CssClass="control-label">Room Type</asp:Label>
+                        <asp:TextBox runat="server" ID="RoomType" CssClass="form-control" Enabled="false" />
+                    </div>
 
-                        <div class="form-group">
-                        <asp:Label runat="server" AssociatedControlID="RoomDescription2" CssClass="control-label">Room Description</asp:Label>
-                        <asp:TextBox runat="server" ID="RoomDescription2" CssClass="form-control" Enabled="false" />
+                    <div class="form-group">
+                        <asp:Label runat="server" AssociatedControlID="RoomDescription" CssClass="control-label">Room Description</asp:Label>
+                        <asp:TextBox runat="server" ID="RoomDescription" CssClass="form-control" Enabled="false" />
                     </div>
 
                     <hr class="colorgraph" />
 
                     <div class="pull-left">
-                        <asp:Button runat="server" CssClass="btn btn-primary" Text="Search" />
+                        <asp:Button runat="server" OnClick="SearchRoom" CssClass="btn btn-primary" Text="Search" />
                     </div>
                 </form>
             </div>

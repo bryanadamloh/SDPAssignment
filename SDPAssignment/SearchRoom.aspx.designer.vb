@@ -14,29 +14,29 @@ Option Explicit On
 Partial Public Class SearchRoom
     
     '''<summary>
-    '''RoomID1 control.
+    '''RoomID control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents RoomID1 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents RoomID As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''RoomType2 control.
+    '''RoomType control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents RoomType2 As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents RoomType As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''RoomDescription2 control.
+    '''RoomDescription control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents RoomDescription2 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents RoomDescription As Global.System.Web.UI.WebControls.TextBox
 End Class

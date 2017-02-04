@@ -23,20 +23,20 @@ Partial Public Class ModifyRoom
     Protected WithEvents RoomID As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''RoomType1 control.
+    '''RoomType control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents RoomType1 As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents RoomType As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''RoomDescription1 control.
+    '''RoomDescription control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents RoomDescription1 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents RoomDescription As Global.System.Web.UI.WebControls.TextBox
 End Class

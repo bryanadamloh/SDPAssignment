@@ -48,8 +48,8 @@ hr.style-eight:after {
                     </div>
 
                     <div class="form-group">
-                        <asp:Label runat="server" AssociatedControlID="RoomType1" CssClass="control-label">Room Type</asp:Label>
-                        <asp:DropDownList runat="server" ID="RoomType1" CssClass="form-control" Enabled="false">
+                        <asp:Label runat="server" AssociatedControlID="RoomType" CssClass="control-label">Room Type</asp:Label>
+                        <asp:DropDownList runat="server" ID="RoomType" CssClass="form-control">
                         <asp:ListItem Text="Select Room Type"></asp:ListItem>
                         <asp:ListItem Text="Family Suite"></asp:ListItem>
                         <asp:ListItem Text="Double Suite"></asp:ListItem>
@@ -58,15 +58,15 @@ hr.style-eight:after {
                     </div>
 
                     <div class="form-group">
-                    <asp:Label runat="server" AssociatedControlID="RoomDescription1" CssClass="control-label">Room Description</asp:Label>
-                    <asp:TextBox runat="server" ID="RoomDescription1" CssClass="form-control" Enabled="false" />
+                    <asp:Label runat="server" AssociatedControlID="RoomDescription" CssClass="control-label">Room Description</asp:Label>
+                    <asp:TextBox runat="server" ID="RoomDescription" CssClass="form-control" />
                 </div>
 
                     <hr class="colorgraph" />
 
                     <div class="pull-left">
-                        <asp:Button runat="server" CssClass="btn btn-info" Text="Enter" />
-                        <asp:Button runat="server" CssClass="btn btn-primary" Text="Update" />
+                        <asp:Button runat="server" OnClick="SearchRoom" CssClass="btn btn-info" Text="Enter" />
+                        <asp:Button runat="server" OnClick="UpdateRoom" CssClass="btn btn-primary" Text="Update" />
                     </div>
                 </form>
             </div>
