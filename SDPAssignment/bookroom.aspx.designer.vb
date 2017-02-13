@@ -14,56 +14,29 @@ Option Explicit On
 Partial Public Class bookroom
     
     '''<summary>
-    '''pax control.
+    '''Room1Price control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents pax As Global.System.Web.UI.HtmlControls.HtmlSelect
+    Protected WithEvents Room1Price As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''nights control.
+    '''Room2Price control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents nights As Global.System.Web.UI.HtmlControls.HtmlSelect
+    Protected WithEvents Room2Price As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Select1 control.
+    '''Room3Price control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Select1 As Global.System.Web.UI.HtmlControls.HtmlSelect
-    
-    '''<summary>
-    '''Select2 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Select2 As Global.System.Web.UI.HtmlControls.HtmlSelect
-    
-    '''<summary>
-    '''Select3 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Select3 As Global.System.Web.UI.HtmlControls.HtmlSelect
-    
-    '''<summary>
-    '''Select4 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Select4 As Global.System.Web.UI.HtmlControls.HtmlSelect
+    Protected WithEvents Room3Price As Global.System.Web.UI.WebControls.Label
 End Class

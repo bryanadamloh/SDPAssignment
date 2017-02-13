@@ -41,67 +41,13 @@ Partial Public Class Payment
     Protected WithEvents CheckOut As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''Comment control.
+    '''PaymentMethod control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Comment As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''CardName control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents CardName As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''CardNum control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents CardNum As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''Address control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Address As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''CVC control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents CVC As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''Month control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Month As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''Year control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Year As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents PaymentMethod As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''Amount control.
@@ -111,4 +57,22 @@ Partial Public Class Payment
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Amount As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''Comment control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Comment As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''RoomPrice control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RoomPrice As Global.System.Web.UI.WebControls.Label
 End Class

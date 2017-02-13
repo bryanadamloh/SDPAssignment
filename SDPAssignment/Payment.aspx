@@ -4,14 +4,36 @@
 .bg-grey {
       background-color: #f6f6f6;
 }
+.colorgraph{
+  height: 5px;
+  border-top: 0;
+  background: #c4e17f;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+.jumbotron-flat {
+  background-color: #4DB8FF;
+  height: 100%;
+  border: 1px solid #4DB8FF;
+  background: white;
+  width: 100%;
+  text-align: center;
+  overflow: auto;
+}
 </style>
 
-    <div id="payment" class="container" style="padding: 60px 50px;">
+    <div class="container" style="padding: 70px 50px;">
         <div class="row">
             <div class="col-md-12">
                 <h1 class="text-center">Payment Information</h1>
-                <hr />
+                <hr class="colorgraph"/>
                 
+                <div class="alert alert-info text-justify">
+                    Please choose the payment method below. If you choose Debit/Credit Card, please enter the information needed
+                    to complete the transaction. If you choose Deposit, please enter the remaining amount needed to complete the transaction 
+                    and pay the amount at the reception during the arrival.
+                </div>
+
                 <form>
                     <br>
 
@@ -31,102 +53,39 @@
                     </div>
 
                     <div class="form-group">
+                        <asp:Label runat="server" AssociatedControlID="PaymentMethod" CssClass="control-label">Payment Method</asp:Label>
+                        <asp:DropDownList runat="server" ID="PaymentMethod" CssClass="form-control">
+                            <asp:ListItem Text="Select Payment Method"></asp:ListItem>
+                            <asp:ListItem Text="Credit/Debit Card"></asp:ListItem>
+                            <asp:ListItem Text="Deposit"></asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+
+                    <div class="form-group">
+                        <asp:Label runat="server" AssociatedControlID="Amount" CssClass="control-label">Amount</asp:Label>
+                        <asp:TextBox runat="server" ID="Amount" CssClass="form-control" placeholder="Amount"></asp:TextBox>
+                    </div>
+
+                    <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="Comment" CssClass="control-label">Additional Comment</asp:Label>
                         <asp:TextBox runat="server" ID="Comment" CssClass="form-control" TextMode="MultiLine" Rows="5"></asp:TextBox>
                     </div>
 
-                </form>
-            </div>
-        </div>
-    </div>
+                    <div class="jumbotron jumbotron-flat center-block" style="margin-top:60px;">
+                        <div class="center">
+                            <h2>TOTAL PRICE:</h2>
+                        </div>
+                        <asp:Label runat="server" ID="RoomPrice" Text="" style="font-size:80px;"></asp:Label>
+                    </div>
 
-    <div class="container bg-grey" style="padding: 60px 50px;">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="text-center">Payment Method</h1>
-                <hr />
+                </form>
 
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="tab-content">
-                            <div id="card" class="tab-pane fade in active">
-
-                                <form>
-                                    <br />
-
-                                    <div class="form-group">
-                                        <asp:Label runat="server" AssociatedControlID="CardName" CssClass="control-label">Name on Debit/Credit Card</asp:Label>
-                                        <asp:TextBox runat="server" ID="CardName" CssClass="form-control" Placeholder="Full Name"></asp:TextBox>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <asp:Label runat="server" AssociatedControlID="CardNum" CssClass="control-label">Card Number</asp:Label>
-                                        <asp:TextBox runat="server" ID="CardNum" CssClass="form-control" Placeholder="1111 2222 3333 4444"></asp:TextBox>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <asp:Label runat="server" AssociatedControlID="Address" CssClass="control-label">Billing Address</asp:Label>
-                                        <asp:TextBox runat="server" ID="Address" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <asp:Label runat="server" AssociatedControlID="CVC" CssClass="control-label">CVC</asp:Label>
-                                        <asp:TextBox runat="server" ID="CVC" CssClass="form-control" Placeholder="ex. 821"></asp:TextBox>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <asp:Label runat="server" AssociatedControlID="Month" CssClass="control-label">Expiration Month</asp:Label>
-                                        <asp:TextBox runat="server" ID="Month" CssClass="form-control" Placeholder="MM"></asp:TextBox>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <asp:Label runat="server" AssociatedControlID="Year" CssClass="control-label">Expiration Year</asp:Label>
-                                        <asp:TextBox runat="server" ID="Year" CssClass="form-control" Placeholder="YYYY"></asp:TextBox>
-                                    </div>
-
-                                    <br />
-
-                                    <div class="form-group">
-                                        <asp:Button runat="server" OnClick="card_Click" CssClass="btn btn-primary btn-block" Text="Continue →" />
-                                    </div>
-                                </form>
-
-                            </div>
-                        
-                   <div id="deposit" class="tab-pane fade">
-
-                                <form>
-                                    <br />
-
-                                    <div class="form-group">
-                                        <asp:Label runat="server" AssociatedControlID="Amount" CssClass="control-label">Amount</asp:Label>
-                                        <asp:TextBox runat="server" ID="Amount" CssClass="form-control" Placeholder="Enter the deposit amount"></asp:TextBox>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <asp:Button runat="server" OnClick="deposit_Click" CssClass="btn btn-primary btn-block" Text="Continue →" />
-                                    </div>
-                                </form>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-6">
-                        <br />
-                        <div class="alert alert-info text-justify">Please choose the payment method below. If you choose Debit/Credit Card, please enter the information needed
-                            to complete the transaction. If you choose Deposit, please enter the amount needed to complete the transaction and pay the amount at the 
-                            reception during the arrival.
-                        </div>
-                        <br />
-                        <div class="btn-group-vertical btn-block">
-                            <a class="btn btn-default" data-toggle="tab" style="text-align:left;" href="#card">Debit/Credit Card</a>
-                            <a class="btn btn-default" data-toggle="tab" style="text-align:left;" href="#deposit">Deposit</a>
-                        </div>
+                    <div class="col-md-12">
+                        <asp:Button runat="server" Text="Confirm" CssClass="btn btn-primary btn-block" />
                     </div>
                 </div>
-
+                <hr class="colorgraph"/>
             </div>
         </div>
     </div>

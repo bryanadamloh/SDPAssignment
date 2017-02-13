@@ -11,32 +11,12 @@ Public Class Payment
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
-    End Sub
-
-    Protected Sub deposit_Click(sender As Object, e As EventArgs)
-        If IsPostBack Then
-            Dim connect As String = "Provider=Microsoft.JET.OLEDB.4.0;" & "Data Source=|DataDirectory|OrientHotel.mdb"
-            Dim SqlString As String = "Select * From Reservation Where DepositPaid = ?"
-            Using conn As New OleDbConnection(connect)
-                conn.Open()
-                Using cmd As New OleDbCommand(SqlString, conn)
-                    cmd.CommandType = CommandType.Text
-                    cmd.Parameters.AddWithValue("DepositPaid", Amount.Text)
-
-                    Using reader As OleDbDataReader = cmd.ExecuteReader()
-                        Dim SqlString1 As String = "Insert Into Customer (CustFName, CustLName, CustEmail, CustUsername, CustPassword) Values (@CustFName, @CustLName, @CustEmail, @CustUsername, @CustPassword)"
-                            Dim cmd1 As OleDbCommand = New OleDbCommand(SqlString1, conn)
-                            cmd1.CommandType = CommandType.Text
-                        cmd1.Parameters.AddWithValue("@DepositPaid", Amount.Text)
-                        cmd1.ExecuteNonQuery()
-                        MsgBox("Payment Successful!")
-                        Response.Redirect("Default.aspx")
-                    End Using
-
-                End Using
-                conn.Close()
-            End Using
+        If Application("Room1") IsNot Nothing Then
+            RoomPrice.Text = Application("Room1").ToString()
+        ElseIf Application("Room2") IsNot Nothing Then
+            RoomPrice.Text = Application("Room2").ToString()
+        ElseIf Application("Room3") IsNot Nothing Then
+            RoomPrice.Text = Application("Room3").ToString()
         End If
     End Sub
 End Class
