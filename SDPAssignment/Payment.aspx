@@ -89,7 +89,7 @@
                         <div class="center">
                             <h2>TOTAL PRICE:</h2>
                         </div>
-                        <asp:Label runat="server" ID="RoomPrice" Text="" style="font-size:80px;"></asp:Label>
+                        <div style="font-size:80px;">RM<asp:Label runat="server" ID="RoomPrice" Text="" style="font-size:80px;"></asp:Label></div>
                     </div>
 
                 </form>
