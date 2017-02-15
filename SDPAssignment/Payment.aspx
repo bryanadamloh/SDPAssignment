@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Payment" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Customer.Master" CodeBehind="Payment.aspx.vb" Inherits="SDPAssignment.Payment" %>
+﻿<%@ Page Title="Payment" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Member.Master" CodeBehind="Payment.aspx.vb" Inherits="SDPAssignment.Payment" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <style>
 .bg-grey {
@@ -34,12 +34,21 @@
                     and pay the amount at the reception during the arrival.
                 </div>
 
+                <div class="alert alert-success text-justify">
+                    You have chose <asp:Label runat="server" ID="HotelRoomName"></asp:Label> as your hotel room!
+                </div>
+
                 <form>
                     <br>
 
                     <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="FullName" CssClass="control-label">Full Name</asp:Label>
                         <asp:TextBox runat="server" ID="FullName" CssClass="form-control" placeholder="Full Name"></asp:TextBox>
+                    </div>
+
+                    <div class="form-group">
+                        <asp:Label runat="server" AssociatedControlID="RoomType" CssClass="control-label">Room Type</asp:Label>
+                        <asp:TextBox runat="server" ID="RoomType" CssClass="form-control" Enabled="false"></asp:TextBox>
                     </div>
 
                     <div class="form-group">
@@ -59,6 +68,11 @@
                             <asp:ListItem Text="Credit/Debit Card"></asp:ListItem>
                             <asp:ListItem Text="Deposit"></asp:ListItem>
                         </asp:DropDownList>
+                    </div>
+
+                    <div class="form-group">
+                        <asp:Label runat="server" AssociatedControlID="TotalDue" CssClass="control-label">Total Amount</asp:Label>
+                        <asp:TextBox runat="server" ID="TotalDue" CssClass="form-control" Enabled="false"></asp:TextBox>
                     </div>
 
                     <div class="form-group">
@@ -82,7 +96,7 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <asp:Button runat="server" Text="Confirm" CssClass="btn btn-primary btn-block" />
+                        <asp:Button runat="server" OnClick="ConfirmPayment" Text="Confirm" CssClass="btn btn-primary btn-block" />
                     </div>
                 </div>
                 <hr class="colorgraph"/>

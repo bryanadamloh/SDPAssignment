@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class bookroom
     
     '''<summary>
+    '''Room1Name control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Room1Name As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''Room1Price control.
     '''</summary>
     '''<remarks>
@@ -23,6 +32,15 @@ Partial Public Class bookroom
     Protected WithEvents Room1Price As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
+    '''Room2Name control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Room2Name As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''Room2Price control.
     '''</summary>
     '''<remarks>
@@ -30,6 +48,15 @@ Partial Public Class bookroom
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Room2Price As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''Room3Name control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Room3Name As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''Room3Price control.

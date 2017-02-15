@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class Payment
     
     '''<summary>
+    '''HotelRoomName control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents HotelRoomName As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''FullName control.
     '''</summary>
     '''<remarks>
@@ -21,6 +30,15 @@ Partial Public Class Payment
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents FullName As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''RoomType control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RoomType As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''CheckIn control.
@@ -48,6 +66,15 @@ Partial Public Class Payment
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PaymentMethod As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''TotalDue control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TotalDue As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''Amount control.

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Room Bookings" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Customer.Master" CodeBehind="bookroom.aspx.vb" Inherits="SDPAssignment.bookroom" %>
+﻿<%@ Page Title="Room Bookings" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Member.Master" CodeBehind="bookroom.aspx.vb" Inherits="SDPAssignment.bookroom" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <style>
 .colorgraph{
@@ -37,9 +37,10 @@ h4{
 
     <div class="container-fluid" style="padding:60px 50px;">
         <div class="row">
-            <div class="col-md-4">
-                <h4 class="text-center">Family Suite</h4>
-                <img src="Images/deluxe1500x930.jpg" class="center-block" style="width:500px; height:300px;" />
+
+            <div class="col-md-4 text-center">
+                <asp:Label runat="server" ID="Room1Name" CssClass="h4">Family Suite</asp:Label>
+                <img src="Images/deluxe1500x930.jpg" class="center-block" style="width:500px; height:300px; margin-top:30px;" />
             </div>
 
             <div class="col-md-4">
@@ -56,21 +57,23 @@ h4{
             </div>
 
             <div class="col-md-4">
-                <div class="jumbotron jumbotron-flat center-block" style="margin-top:60px;">
+                <div class="jumbotron jumbotron-flat center-block" style="margin-top:45px;">
                     <div class="center">
                         <h2>PRICE PER BOOKING:</h2>
                     </div>
-                    <asp:Label runat="server" ID="Room1Price" style="font-size:80px;">RM600</asp:Label>                 
+                    <div style="font-size:80px;">RM<asp:Label runat="server" ID="Room1Price" style="font-size:80px;">600</asp:Label></div>             
                 </div>
             </div>
+
         </div>
     </div>
 
     <div class="container-fluid" style="padding:60px 50px;">
         <div class="row">
-            <div class="col-md-4">
-                <h4 class="text-center">Double Suite</h4>
-                <img src="Images/hotel-interior-room0416.jpg" class="center-block" style="width:500px; height:300px;" />
+
+            <div class="col-md-4 text-center">
+                <asp:Label runat="server" ID="Room2Name" CssClass="h4">Double Suite</asp:Label>
+                <img src="Images/hotel-interior-room0416.jpg" class="center-block" style="width:500px; height:300px; margin-top:30px;" />
             </div>
 
             <div class="col-md-4">
@@ -87,11 +90,11 @@ h4{
             </div>
 
             <div class="col-md-4">
-                <div class="jumbotron jumbotron-flat center-block" style="margin-top:60px;">
+                <div class="jumbotron jumbotron-flat center-block" style="margin-top:45px;">
                     <div class="center">
                         <h2>PRICE PER BOOKING:</h2>
                     </div>
-                    <asp:Label runat="server" ID="Room2Price" style="font-size:80px;">RM500</asp:Label>                 
+                    <div style="font-size:80px;">RM<asp:Label runat="server" ID="Room2Price" style="font-size:80px;">500</asp:Label></div>
                 </div>
             </div>
 
@@ -100,9 +103,10 @@ h4{
 
     <div class="container-fluid" style="padding:60px 50px;">
         <div class="row">
-            <div class="col-md-4">
-                <h4 class="text-center">Queen Suite</h4>
-                <img src="Images/hotelroom.jpg" class="center-block" style="width:500px; height:300px;"/>
+
+            <div class="col-md-4 text-center">
+                <asp:Label runat="server" ID="Room3Name" CssClass="h4">Queen Suite</asp:Label>
+                <img src="Images/hotelroom.jpg" class="center-block" style="width:500px; height:300px; margin-top:30px;"/>
             </div>
 
             <div class="col-md-4">
@@ -119,13 +123,14 @@ h4{
             </div>
 
             <div class="col-md-4">
-                <div class="jumbotron jumbotron-flat center-block" style="margin-top:60px;">
+                <div class="jumbotron jumbotron-flat center-block" style="margin-top:45px;">
                     <div class="center">
                         <h2>PRICE PER BOOKING:</h2>
                     </div>
-                    <asp:Label runat="server" ID="Room3Price" style="font-size:80px;">RM700</asp:Label>                 
+                    <div style="font-size:80px;">RM<asp:Label runat="server" ID="Room3Price" style="font-size:80px;">700</asp:Label></div>                
                 </div>
             </div>
+
         </div>
     </div>
 </asp:Content>
