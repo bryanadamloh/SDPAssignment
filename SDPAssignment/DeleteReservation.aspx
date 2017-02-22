@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="Delete Reservation" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Staff.Master" CodeBehind="DeleteReservation.aspx.vb" Inherits="SDPAssignment.DeleteReservation" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <style>
 h1{
     font-weight: 600;
@@ -64,31 +67,12 @@ hr.style-eight:after {
 
                     <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="CheckIn" CssClass="control-label">Check-In Date</asp:Label>
-                        <asp:TextBox runat="server" ID="CheckIn" CssClass="form-control" TextMode="Date"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="CheckIn" CssClass="form-control"></asp:TextBox>
                     </div>
 
                     <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="CheckIn" CssClass="control-label">Check-Out Date</asp:Label>
-                        <asp:TextBox runat="server" ID="CheckOut" CssClass="form-control" TextMode="Date"></asp:TextBox>
-                    </div>
-
-                    <div class="form-group">
-                        <asp:Label runat="server" AssociatedControlID="PaymentMethod" CssClass="control-label">Payment Method</asp:Label>
-                        <asp:DropDownList runat="server" ID="PaymentMethod" CssClass="form-control">
-                            <asp:ListItem Text="Select Payment Method"></asp:ListItem>
-                            <asp:ListItem Text="Credit/Debit Card"></asp:ListItem>
-                            <asp:ListItem Text="Deposit"></asp:ListItem>
-                        </asp:DropDownList>
-                    </div>
-
-                    <div class="form-group">
-                        <asp:Label runat="server" AssociatedControlID="TotalDue" CssClass="control-label">Total Amount</asp:Label>
-                        <asp:TextBox runat="server" ID="TotalDue" CssClass="form-control" Enabled="false"></asp:TextBox>
-                    </div>
-
-                    <div class="form-group">
-                        <asp:Label runat="server" AssociatedControlID="Amount" CssClass="control-label">Amount</asp:Label>
-                        <asp:TextBox runat="server" ID="Amount" CssClass="form-control" placeholder="Amount"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="CheckOut" CssClass="form-control"></asp:TextBox>
                     </div>
 
                     <div class="form-group">
@@ -100,10 +84,10 @@ hr.style-eight:after {
 
                 <div class="row">
                     <div class="col-md-6">
-                        <asp:Button runat="server" Text="Search" CssClass="btn btn-success btn-block" />
+                        <asp:Button runat="server" OnClick="SearchReservation" Text="Search" CssClass="btn btn-success btn-block" />
                     </div>
                     <div class="col-md-6">
-                        <asp:Button runat="server" Text="Delete" CssClass="btn btn-danger btn-block" />
+                        <asp:Button runat="server" OnClick="DeleteReservation" Text="Delete" CssClass="btn btn-danger btn-block" />
                     </div>
                 </div>
 
@@ -111,4 +95,22 @@ hr.style-eight:after {
             </div>
         </div>
     </div>
+
+<script>
+    $(document).ready(function () {
+        $("#<%=CheckIn.ClientID%>").datepicker({
+            minDate: 0,
+            onSelect: function (selected) {
+                var date = $(this).datepicker('getDate');
+                date.setTime(date.getTime() + (1000 * 60 * 60 * 24 * 6));
+                $("#<%=CheckOut.ClientID%>").datepicker("option", "maxDate", date);
+                $("#<%=CheckOut.ClientID%>").datepicker("option", "minDate", $(this).datepicker('getDate'));
+            }
+        });
+
+        $("#<%=CheckOut.ClientID%>").datepicker({
+            minDate: 0,
+        });
+    });
+</script>
 </asp:Content>

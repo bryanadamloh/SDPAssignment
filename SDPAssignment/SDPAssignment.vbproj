@@ -206,6 +206,8 @@
     <Content Include="About-Member.aspx" />
     <Content Include="About.aspx" />
     <Content Include="bookroom.aspx" />
+    <Content Include="CheckInWithoutReservation.aspx" />
+    <Content Include="CheckInWithReservation.aspx" />
     <Content Include="Contact-Member.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -291,6 +293,20 @@
     </Compile>
     <Compile Include="bookroom.aspx.vb">
       <DependentUpon>bookroom.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CheckInWithoutReservation.aspx.designer.vb">
+      <DependentUpon>CheckInWithoutReservation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckInWithoutReservation.aspx.vb">
+      <DependentUpon>CheckInWithoutReservation.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CheckInWithReservation.aspx.designer.vb">
+      <DependentUpon>CheckInWithReservation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckInWithReservation.aspx.vb">
+      <DependentUpon>CheckInWithReservation.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Contact-Member.aspx.designer.vb">

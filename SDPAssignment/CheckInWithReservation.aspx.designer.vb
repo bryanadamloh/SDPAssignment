@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class DeleteReservation
+Partial Public Class CheckInWithReservation
     
     '''<summary>
     '''ReservationID control.
@@ -57,13 +57,4 @@ Partial Public Class DeleteReservation
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents CheckOut As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''Comment control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Comment As Global.System.Web.UI.WebControls.TextBox
 End Class

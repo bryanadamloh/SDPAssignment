@@ -11,16 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class DeleteReservation
-    
-    '''<summary>
-    '''ReservationID control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ReservationID As Global.System.Web.UI.WebControls.TextBox
+Partial Public Class CheckInWithoutReservation
     
     '''<summary>
     '''FullName control.
@@ -30,6 +21,15 @@ Partial Public Class DeleteReservation
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents FullName As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''ICNum control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ICNum As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''HotelRoom control.
@@ -57,13 +57,4 @@ Partial Public Class DeleteReservation
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents CheckOut As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''Comment control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Comment As Global.System.Web.UI.WebControls.TextBox
 End Class

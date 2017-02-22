@@ -69,7 +69,7 @@ h4 {
                         <p style="font-size:18px; font-weight:400; margin:10px;">Create new reservation for new customers.</p>
                     </div>
                     <div class="panel-footer">
-                        <a href="#" class="btn btn-primary" style="margin: 10px 0;">Create</a>
+                        <a href="CreateReservation.aspx" class="btn btn-primary" style="margin: 10px 0;">Create</a>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@ h4 {
                         <p style="font-size:18px; font-weight:400; margin:10px;">Modify and update customer's reservation</p>
                     </div>
                     <div class="panel-footer">
-                        <a href="#" class="btn btn-primary" style="margin: 10px 0;">Modify/Update</a>
+                        <a href="ModifyReservation.aspx" class="btn btn-primary" style="margin: 10px 0;">Modify/Update</a>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@ h4 {
                         <p style="font-size:18px; font-weight:400; margin:10px;">Search for customer's reservation</p>
                     </div>
                     <div class="panel-footer">
-                        <a href="#" class="btn btn-primary" style="margin: 10px 0;">Search</a>
+                        <a href="ModifyReservation.aspx" class="btn btn-primary" style="margin: 10px 0;">Search</a>
                     </div>
                 </div>
             </div>
@@ -108,7 +108,7 @@ h4 {
                         <p style="font-size:18px; font-weight:400; margin:10px;">Delete customer's reservation</p>
                     </div>
                     <div class="panel-footer">
-                        <a href="#" class="btn btn-primary" style="margin: 10px 0;">Delete</a>
+                        <a href="DeleteReservation.aspx" class="btn btn-primary" style="margin: 10px 0;">Delete</a>
                     </div>
                 </div>
             </div>
@@ -132,7 +132,8 @@ h4 {
                         <p style="font-size:18px; font-weight:400; margin:10px;">Manages customer's checkin</p>
                     </div>
                     <div class="panel-footer">
-                        <a href="#" class="btn btn-primary" style="margin: 10px 0;">Check-In</a>
+                        <a href="CheckInWithReservation.aspx" class="btn btn-primary" style="margin: 10px 0;">With Reservation</a>
+                        <a href="CheckInWithoutReservation.aspx" class="btn btn-primary" style="margin: 10px 0;">Without Reservation</a>
                     </div>
                 </div>
             </div>
@@ -195,7 +196,7 @@ h4 {
                         <p style="font-size:18px; font-weight:400; margin:10px;">Create a new hotel room</p>
                     </div>
                     <div class="panel-footer">
-                        <a href="#" class="btn btn-primary" style="margin: 10px 0;">Create</a>
+                        <a href="CreateRoom.aspx" class="btn btn-primary" style="margin: 10px 0;">Create</a>
                     </div>
                 </div>
             </div>
@@ -208,7 +209,7 @@ h4 {
                         <p style="font-size:18px; font-weight:400; margin:10px;">Modify and update hotel rooms</p>
                     </div>
                     <div class="panel-footer">
-                        <a href="#" class="btn btn-primary" style="margin: 10px 0;">Modify/Update</a>
+                        <a href="ModifyRoom.aspx" class="btn btn-primary" style="margin: 10px 0;">Modify/Update</a>
                     </div>
                 </div>
             </div>
@@ -221,7 +222,7 @@ h4 {
                         <p style="font-size:18px; font-weight:400; margin:10px;">Search for available hotel rooms</p>
                     </div>
                     <div class="panel-footer">
-                        <a href="#" class="btn btn-primary" style="margin: 10px 0;">Search</a>
+                        <a href="SearchRoom.aspx" class="btn btn-primary" style="margin: 10px 0;">Search</a>
                     </div>
                 </div>
             </div>
@@ -234,7 +235,7 @@ h4 {
                         <p style="font-size:18px; font-weight:400; margin:10px;">Delete hotel rooms</p>
                     </div>
                     <div class="panel-footer">
-                        <a href="#" class="btn btn-primary" style="margin: 10px 0;">Delete</a>
+                        <a href="DeleteRoom.aspx" class="btn btn-primary" style="margin: 10px 0;">Delete</a>
                     </div>
                 </div>
             </div>
