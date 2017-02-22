@@ -11,7 +11,34 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class _Default
+Partial Public Class CheckOut
+    
+    '''<summary>
+    '''WalkInID control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents WalkInID As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''FullName control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents FullName As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''ICNum control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ICNum As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''HotelRoom control.

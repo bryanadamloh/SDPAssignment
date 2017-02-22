@@ -50,7 +50,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="#">Orient Hotel Staff</a>
+        <a class="navbar-brand" href="StaffHome.aspx">Orient Hotel Staff</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
@@ -58,23 +58,22 @@
           <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rooms<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Manage Rooms</a></li>
                 <li><a href="#">Room Report</a></li>
               </ul>
           </li>
           <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reservations<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                  <li><a href="#">Manage Reservations</a></li>
                   <li><a href="#">Reservation Report</a></li>
               </ul>
           </li>
           <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Front Desk<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                  <li><a href="#">Check-ins</a></li>
-                  <li><a href="#">Check-outs</a></li>
-                  <li><a href="#">Finances</a></li>
+                  <li><a href="CheckInWithReservation.aspx">Check-in With Reservation</a></li>
+                  <li><a href="CheckInWithoutReservation.aspx">Check-in Without Reservation</a></li>
+                  <li><a href="CheckOut.aspx">Check-outs</a></li>
+                  <li><a href="ManagePayment.aspx">Finances</a></li>
                   <li role="separator" class="divider"></li>
                   <li><a href="#">Reports</a></li>
               </ul>
@@ -82,12 +81,8 @@
         </ul>
 <!-- right nav bar -->
         <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="Default.aspx">Log Out</a></li>
-            </ul>
-          </li>
+            <asp:Label runat="server" ID="txtuser" Text="Text" CssClass="navbar-text"></asp:Label>
+            <asp:Button runat="server" OnClick="btnlogout_Click" Text="Logout" CssClass="btn btn-danger navbar-btn" />
          </ul>
       </div>
     </div>

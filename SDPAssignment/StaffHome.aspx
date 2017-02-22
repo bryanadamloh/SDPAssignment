@@ -73,6 +73,7 @@ h4 {
                     </div>
                 </div>
             </div>
+
             <div class="col-md-3">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
@@ -86,6 +87,7 @@ h4 {
                     </div>
                 </div>
             </div>
+
             <div class="col-md-3">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
@@ -99,6 +101,7 @@ h4 {
                     </div>
                 </div>
             </div>
+
             <div class="col-md-3">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
@@ -137,6 +140,7 @@ h4 {
                     </div>
                 </div>
             </div>
+
             <div class="col-md-3">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
@@ -146,10 +150,11 @@ h4 {
                         <p style="font-size:18px; font-weight:400; margin:10px;">Manages customer's checkout</p>
                     </div>
                     <div class="panel-footer">
-                        <a href="#" class="btn btn-primary" style="margin: 10px 0;">Check-Out</a>
+                        <a href="CheckOut.aspx" class="btn btn-primary" style="margin: 10px 0;">Check-Out</a>
                     </div>
                 </div>
             </div>
+
             <div class="col-md-3">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
@@ -159,10 +164,11 @@ h4 {
                         <p style="font-size:18px; font-weight:400; margin:10px;">Manages customer's transaction and payment</p>
                     </div>
                     <div class="panel-footer">
-                        <a href="#" class="btn btn-primary" style="margin: 10px 0;">Payment</a>
+                        <a href="ManagePayment.aspx" class="btn btn-primary" style="margin: 10px 0;">Payment</a>
                     </div>
                 </div>
             </div>
+
             <div class="col-md-3">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
@@ -200,6 +206,7 @@ h4 {
                     </div>
                 </div>
             </div>
+
             <div class="col-md-3">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
@@ -213,6 +220,7 @@ h4 {
                     </div>
                 </div>
             </div>
+
             <div class="col-md-3">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
@@ -226,6 +234,7 @@ h4 {
                     </div>
                 </div>
             </div>
+
             <div class="col-md-3">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">

@@ -1,8 +1,5 @@
-﻿<%@ Page Title="Check In With Reservation" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Staff.Master" CodeBehind="CheckInWithReservation.aspx.vb" Inherits="SDPAssignment.CheckInWithReservation" %>
+﻿<%@ Page Title="Payment Management" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Staff.Master" CodeBehind="ManagePayment.aspx.vb" Inherits="SDPAssignment.ManagePayment" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <style>
 h1{
     font-weight: 600;
@@ -35,9 +32,9 @@ hr.style-eight:after {
     <div class="container-fluid" style="padding: 90px 50px;">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h1 class="text-center">Check In Without Reservation</h1>
+                <h1 class="text-center">Payment Management</h1>
                 <p class="text-center" style="font-size:14px; font-weight:600; margin-top:20px;">
-                    Managing Check Ins for those customers who just walk in
+                    Managing payment and billings for customers
                 </p>
                 <hr class="style-eight" />
 
@@ -46,8 +43,8 @@ hr.style-eight:after {
                     <hr class="colorgraph" />
 
                     <div class="form-group">
-                        <asp:Label runat="server" AssociatedControlID="ReservationID" CssClass="control-label">Reservation ID</asp:Label>
-                        <asp:TextBox runat="server" ID="ReservationID" CssClass="form-control" placeholder="Enter Reservation ID"></asp:TextBox>
+                        <asp:Label runat="server" AssociatedControlID="ReservationID" CssClass="control-label">Reservation/Walk In ID</asp:Label>
+                        <asp:TextBox runat="server" ID="ReservationID" CssClass="form-control" placeholder="Enter Reservation or Walk In ID"></asp:TextBox>
                     </div>
 
                     <div class="form-group">
@@ -57,7 +54,7 @@ hr.style-eight:after {
 
                     <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="HotelRoom" CssClass="control-label">Room Type</asp:Label>
-                        <asp:DropDownList runat="server" ID="HotelRoom" CssClass="form-control">
+                        <asp:DropDownList runat="server" ID="HotelRoom" CssClass="form-control" OnSelectedIndexChanged="HotelRoomValue" AutoPostBack="true">
                             <asp:ListItem Text="Select Hotel Room"></asp:ListItem>
                             <asp:ListItem Text="Family Suite"></asp:ListItem>
                             <asp:ListItem Text="Double Suite"></asp:ListItem>
@@ -75,6 +72,25 @@ hr.style-eight:after {
                         <asp:TextBox runat="server" ID="CheckOut" CssClass="form-control"></asp:TextBox>
                     </div>
 
+                    <div class="form-group">
+                        <asp:Label runat="server" AssociatedControlID="PaymentMethod" CssClass="control-label">Payment Method</asp:Label>
+                        <asp:DropDownList runat="server" ID="PaymentMethod" CssClass="form-control" required>
+                            <asp:ListItem Text="Select Payment Method"></asp:ListItem>
+                            <asp:ListItem Text="Credit/Debit Card"></asp:ListItem>
+                            <asp:ListItem Text="Deposit"></asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+
+                    <div class="form-group">
+                        <asp:Label runat="server" AssociatedControlID="TotalDue" CssClass="control-label">Total Amount</asp:Label>
+                        <asp:TextBox runat="server" ID="TotalDue" CssClass="form-control" Enabled="false"></asp:TextBox>
+                    </div>
+
+                    <div class="form-group">
+                        <asp:Label runat="server" AssociatedControlID="Amount" CssClass="control-label">Amount</asp:Label>
+                        <asp:TextBox runat="server" ID="Amount" CssClass="form-control" placeholder="Amount"></asp:TextBox>
+                    </div>
+
                 </form>
 
                 <div class="row">
@@ -82,7 +98,7 @@ hr.style-eight:after {
                         <asp:Button runat="server" OnClick="SearchReservation" Text="Search" CssClass="btn btn-success btn-block" />
                     </div>
                     <div class="col-md-6">
-                        <asp:Button runat="server" OnClick="ConfirmCheckIn" Text="Check In" CssClass="btn btn-primary btn-block" />
+                        <asp:Button runat="server" OnClick="UpdatePayment" Text="Update" CssClass="btn btn-primary btn-block" />
                     </div>
                 </div>
 

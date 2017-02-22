@@ -14,24 +14,44 @@ Public Class Login
     End Sub
 
     Protected Sub Login_Click(sender As Object, e As EventArgs)
-        If IsPostBack Then
-            Dim connect As String = "Provider=Microsoft.JET.OLEDB.4.0;" & "Data Source=|DataDirectory|OrientHotel.mdb"
-            Dim SqlString As String = "Select Count(*) From Customer Where CustUsername = ? AND CustPassword = ?"
-            Dim result As Integer = 0
-            Using conn As New OleDbConnection(connect)
-                conn.Open()
-                Using cmd As New OleDbCommand(SqlString, conn)
-                    cmd.Parameters.AddWithValue("CustUsername", txtuser.Text)
-                    cmd.Parameters.AddWithValue("CustPassword", txtpass.Text)
-                    Session("User") = txtuser.Text
-                    result = DirectCast(cmd.ExecuteScalar(), Integer)
-                End Using
-            End Using
-            If result > 0 Then
-                Response.Redirect("Default-Member.aspx")
-            Else
-                MsgBox("Invalid Username and Password!")
-            End If
-        End If
+        Dim connect As String = "Provider=Microsoft.JET.OLEDB.4.0;" & "Data Source=|DataDirectory|OrientHotel.mdb"
+        Dim Customer As String = "Select * From Customer Where CustUsername = ? AND CustPassword = ?"
+        Dim Staff As String = "Select * From Staff Where StaffUser = ? AND StaffPassword = ?"
+        Using conn As New OleDbConnection(connect)
+            conn.Open()
+
+            Dim cmd As New OleDbCommand(Customer, conn)
+            cmd.CommandType = CommandType.Text
+            cmd.Parameters.AddWithValue("CustUsername", txtuser.Text)
+            cmd.Parameters.AddWithValue("CustPassword", txtpass.Text)
+            Session("User") = txtuser.Text
+            Dim reader As OleDbDataReader = cmd.ExecuteReader
+
+            While reader.Read()
+                If reader.Item("CustUsername") = txtuser.Text And reader.Item("CustPassword") = txtpass.Text Then
+                    Response.Redirect("Default-Member.aspx")
+                Else
+                    MsgBox("Invalid Username and Password!")
+                    reader.Close()
+                End If
+            End While
+            cmd.Dispose()
+
+            Dim cmd1 As New OleDbCommand(Staff, conn)
+            cmd1.CommandType = CommandType.Text
+            cmd1.Parameters.AddWithValue("StaffUser", txtuser.Text)
+            cmd1.Parameters.AddWithValue("StaffPassword", txtpass.Text)
+            Session("User") = txtuser.Text
+            Dim reader1 As OleDbDataReader = cmd1.ExecuteReader
+
+            While reader1.Read()
+                If reader1.Item("StaffUser") = txtuser.Text And reader1.Item("StaffPassword") = txtpass.Text Then
+                    Response.Redirect("StaffHome.aspx")
+                    reader1.Close()
+                End If
+            End While
+            cmd1.Dispose()
+            conn.Close()
+        End Using
     End Sub
 End Class

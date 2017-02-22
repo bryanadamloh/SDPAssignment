@@ -53,21 +53,21 @@ hr.style-eight:after {
                     <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="HotelRoom" CssClass="control-label">Room Type</asp:Label>
                         <asp:DropDownList runat="server" ID="HotelRoom" CssClass="form-control" OnSelectedIndexChanged="HotelRoomValue" AutoPostBack="true">
-                            <asp:ListItem Text="Select Hotel Room" Value="0"></asp:ListItem>
-                            <asp:ListItem Text="Family Suite" Value="1"></asp:ListItem>
-                            <asp:ListItem Text="Double Suite" Value="2"></asp:ListItem>
-                            <asp:ListItem Text="Queen Suite" Value="3"></asp:ListItem>
+                            <asp:ListItem Text="Select Hotel Room"></asp:ListItem>
+                            <asp:ListItem Text="Family Suite"></asp:ListItem>
+                            <asp:ListItem Text="Double Suite"></asp:ListItem>
+                            <asp:ListItem Text="Queen Suite"></asp:ListItem>
                         </asp:DropDownList>
                     </div>
 
                     <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="CheckIn" CssClass="control-label">Check-In Date</asp:Label>
-                        <asp:TextBox runat="server" ID="CheckIn" CssClass="form-control"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="CheckIn" CssClass="form-control" required></asp:TextBox>
                     </div>
 
                     <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="CheckOut" CssClass="control-label">Check-Out Date</asp:Label>
-                        <asp:TextBox runat="server" ID="CheckOut" CssClass="form-control"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="CheckOut" CssClass="form-control" required></asp:TextBox>
                     </div>
 
                     <div class="form-group">

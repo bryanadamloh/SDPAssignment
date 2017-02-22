@@ -15,24 +15,25 @@ Public Class CheckInWithoutReservation
     End Sub
 
     Protected Sub ConfirmCheckIn(sender As Object, e As EventArgs)
-        If IsPostBack Then
-            Dim connect As String = "Provider=Microsoft.JET.OLEDB.4.0;" & "Data Source=|DataDirectory|OrientHotel.mdb"
-            Dim SqlString As String = "Insert Into CheckInOut (CustomerName, ICNumber, RoomType, CheckIn, CheckOut, Status) Values (@CustomerName, @ICNumber, @RoomType, @CheckIn, @CheckOut, @Status)"
-            Dim Status As String = "Checked In"
-            Using conn As New OleDbConnection(connect)
-                conn.Open()
-                Using cmd As New OleDbCommand(SqlString, conn)
-                    cmd.Parameters.AddWithValue("@CustomerName", FullName.Text)
-                    cmd.Parameters.AddWithValue("@ICNumber", ICNum.Text)
-                    cmd.Parameters.AddWithValue("@RoomType", HotelRoom.Text)
-                    cmd.Parameters.AddWithValue("@CheckIn", CheckIn.Text)
-                    cmd.Parameters.AddWithValue("@CheckOut", CheckOut.Text)
-                    cmd.Parameters.AddWithValue("@Status", Status)
-                    cmd.ExecuteNonQuery()
-                    MsgBox("You have been checked in! Enjoy your stay.")
-                End Using
-                conn.Close()
+        Dim connect As String = "Provider=Microsoft.JET.OLEDB.4.0;" & "Data Source=|DataDirectory|OrientHotel.mdb"
+        Dim SqlString As String = "Insert Into CheckInOut (WalkInID, CustomerName, ICNumber, RoomType, CheckIn, CheckOut, Status) Values (@WalkInID, @CustomerName, @ICNumber, @RoomType, @CheckIn, @CheckOut, @Status)"
+        Dim Status As String = "Checked In"
+        Dim rand As Integer = RandGen.Next(1000, 10000)
+        Using conn As New OleDbConnection(connect)
+            conn.Open()
+            Using cmd As New OleDbCommand(SqlString, conn)
+                cmd.Parameters.AddWithValue("@WalkInID", rand)
+                cmd.Parameters.AddWithValue("@CustomerName", FullName.Text)
+                cmd.Parameters.AddWithValue("@ICNumber", ICNum.Text)
+                cmd.Parameters.AddWithValue("@RoomType", HotelRoom.Text)
+                cmd.Parameters.AddWithValue("@CheckIn", CheckIn.Text)
+                cmd.Parameters.AddWithValue("@CheckOut", CheckOut.Text)
+                cmd.Parameters.AddWithValue("@Status", Status)
+                cmd.ExecuteNonQuery()
+                MsgBox("You have been checked in! Enjoy your stay. Your Walk In ID is " + rand.ToString())
+                Response.Redirect("StaffHome.aspx")
             End Using
-        End If
+            conn.Close()
+        End Using
     End Sub
 End Class

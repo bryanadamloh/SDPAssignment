@@ -60,13 +60,11 @@ Public Class CreateReservation
     End Sub
 
     Protected Sub HotelRoomValue(sender As Object, e As EventArgs) Handles HotelRoom.SelectedIndexChanged
-        If HotelRoom.SelectedValue Is "0" Then
-            TotalDue.Text = String.Empty
-        ElseIf HotelRoom.SelectedValue Is "1" Then
+        If HotelRoom.SelectedItem.ToString() Is "Family Suite" Then
             TotalDue.Text = "600"
-        ElseIf HotelRoom.SelectedValue Is "2" Then
+        ElseIf HotelRoom.SelectedItem.ToString() Is "Double Suite" Then
             TotalDue.Text = "500"
-        ElseIf HotelRoom.SelectedValue Is "3" Then
+        ElseIf HotelRoom.SelectedItem.ToString() Is "Queen Suite" Then
             TotalDue.Text = "700"
         End If
     End Sub
