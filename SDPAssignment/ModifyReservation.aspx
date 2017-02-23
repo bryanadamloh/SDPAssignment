@@ -47,7 +47,7 @@ hr.style-eight:after {
 
                     <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="ReservationID" CssClass="control-label">Reservation ID</asp:Label>
-                        <asp:TextBox runat="server" ID="ReservationID" CssClass="form-control" placeholder="Enter Reservation ID"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="ReservationID" CssClass="form-control" placeholder="Enter Reservation ID" required></asp:TextBox>
                     </div>
 
                     <div class="form-group">

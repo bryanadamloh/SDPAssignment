@@ -32,9 +32,9 @@
                 <hr class="colorgraph"/>
                 
                 <div class="alert alert-info text-justify">
-                    Please choose the payment method below. If you choose Debit/Credit Card, please enter the information needed
-                    to complete the transaction. If you choose Deposit, please enter the remaining amount needed to complete the transaction 
-                    and pay the amount at the reception during the arrival.
+                    Please choose the payment method below. If you choose Debit/Credit Card, please enter the exact amount needed
+                    to complete the transaction. If you choose Deposit, please enter any amount needed to complete the transaction 
+                    and pay the remaining amount at the reception during the arrival.
                 </div>
 
                 <div class="alert alert-success text-justify">
@@ -46,7 +46,7 @@
 
                     <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="FullName" CssClass="control-label">Full Name</asp:Label>
-                        <asp:TextBox runat="server" ID="FullName" CssClass="form-control" placeholder="Full Name"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="FullName" CssClass="form-control" placeholder="Full Name" required></asp:TextBox>
                     </div>
 
                     <div class="form-group">
@@ -56,17 +56,17 @@
 
                     <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="CheckIn" CssClass="control-label">Check-In Date</asp:Label>
-                        <asp:TextBox runat="server" ID="CheckIn" CssClass="form-control"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="CheckIn" CssClass="form-control" required></asp:TextBox>
                     </div>
 
                     <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="CheckOut" CssClass="control-label">Check-Out Date</asp:Label>
-                        <asp:TextBox runat="server" ID="CheckOut" CssClass="form-control"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="CheckOut" CssClass="form-control" required></asp:TextBox>
                     </div>
 
                     <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="PaymentMethod" CssClass="control-label">Payment Method</asp:Label>
-                        <asp:DropDownList runat="server" ID="PaymentMethod" CssClass="form-control">
+                        <asp:DropDownList runat="server" ID="PaymentMethod" CssClass="form-control" required>
                             <asp:ListItem Text="Select Payment Method"></asp:ListItem>
                             <asp:ListItem Text="Credit/Debit Card"></asp:ListItem>
                             <asp:ListItem Text="Deposit"></asp:ListItem>
@@ -80,7 +80,7 @@
 
                     <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="Amount" CssClass="control-label">Amount</asp:Label>
-                        <asp:TextBox runat="server" ID="Amount" CssClass="form-control" placeholder="Amount"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="Amount" CssClass="form-control" placeholder="Amount" required></asp:TextBox>
                     </div>
 
                     <div class="form-group">
