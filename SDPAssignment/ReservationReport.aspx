@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Staff.Master" CodeBehind="ReservationReport.aspx.vb" Inherits="SDPAssignment.RoomReport" %>
+﻿<%@ Page Title="Reservation Report" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Staff.Master" CodeBehind="ReservationReport.aspx.vb" Inherits="SDPAssignment.RoomReport" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <style>
 h1{

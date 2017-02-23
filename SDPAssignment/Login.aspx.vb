@@ -47,6 +47,8 @@ Public Class Login
             While reader1.Read()
                 If reader1.Item("StaffUser") = txtuser.Text And reader1.Item("StaffPassword") = txtpass.Text Then
                     Response.Redirect("StaffHome.aspx")
+                Else
+                    MsgBox("Invalid Username and Password!")
                     reader1.Close()
                 End If
             End While
