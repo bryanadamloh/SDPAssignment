@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="Home Page" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Member.Master" CodeBehind="Default-Member.aspx.vb" Inherits="SDPAssignment.Default_Member" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <style>
 /*Top content*/
 .jumbotron {
@@ -54,8 +57,13 @@
             <div class="row">
 	            <div class="col-md-4">
                     <div class="form-group">
-                        <asp:Label runat="server" AssociatedControlID="Search" CssClass="control-label">Search Room</asp:Label>
-                        <asp:TextBox runat="server" ID="Search" CssClass="form-control" Placeholder="Search Room Type" />
+                        <asp:Label runat="server" AssociatedControlID="HotelRoom" CssClass="control-label">Search Room</asp:Label>
+                        <asp:DropDownList runat="server" ID="HotelRoom" CssClass="form-control">
+                            <asp:ListItem Text="Select Hotel Room"></asp:ListItem>
+                            <asp:ListItem Text="Family Suite"></asp:ListItem>
+                            <asp:ListItem Text="Double Suite"></asp:ListItem>
+                            <asp:ListItem Text="Queen Suite"></asp:ListItem>
+                        </asp:DropDownList>
                     </div>
                 </div>
 
@@ -72,7 +80,7 @@
                         <asp:TextBox runat="server" ID="CheckOut" CssClass="form-control" TextMode="Date" />
                     </div>
                 </div>
-                    <a href="bookroom.aspx" class="btn btn-primary btn-lg" type="submit">Book A Room!</a>
+                    <asp:Button runat="server" OnClick="RoomAvailability" CssClass="btn btn-primary" Text="Book A Room" />
              </div>
          </div>
     </div>
@@ -171,4 +179,22 @@
             </div>
           </div>
         </div>
+
+<script>
+    $(document).ready(function () {
+        $("#<%=CheckIn.ClientID%>").datepicker({
+            minDate: 0,
+            onSelect: function (selected) {
+                var date = $(this).datepicker('getDate');
+                date.setTime(date.getTime() + (1000 * 60 * 60 * 24 * 6));
+                $("#<%=CheckOut.ClientID%>").datepicker("option", "maxDate", date);
+                $("#<%=CheckOut.ClientID%>").datepicker("option", "minDate", $(this).datepicker('getDate'));
+            }
+        });
+
+        $("#<%=CheckOut.ClientID%>").datepicker({
+            minDate: 0,
+        });
+    });
+</script>
 </asp:Content>

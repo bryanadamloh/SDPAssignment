@@ -16,16 +16,13 @@ Public Class Register
     Protected Sub CreateUser_Click(sender As Object, e As EventArgs)
         If IsPostBack Then
             Dim connect As String = "Provider=Microsoft.JET.OLEDB.4.0;" & "Data Source=|DataDirectory|OrientHotel.mdb"
-            Dim SqlString As String = "Select * From Customer Where CustFName = ? AND CustLName = ? AND CustEmail = ? AND CustUsername = ? AND CustPassword = ?"
+            Dim SqlString As String = "Select * From Customer Where CustFName = ? AND CustLName = ?"
             Using conn As New OleDbConnection(connect)
                 conn.Open()
                 Using cmd As New OleDbCommand(SqlString, conn)
                     cmd.CommandType = CommandType.Text
                     cmd.Parameters.AddWithValue("CustFName", txtFName.Text)
                     cmd.Parameters.AddWithValue("CustLName", txtLName.Text)
-                    cmd.Parameters.AddWithValue("CustEmail", txtEmail.Text)
-                    cmd.Parameters.AddWithValue("CustUsername", txtUsername.Text)
-                    cmd.Parameters.AddWithValue("CustPassword", txtPassword.Text)
 
                     Using reader As OleDbDataReader = cmd.ExecuteReader()
                         If reader.HasRows Then

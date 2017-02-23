@@ -11,32 +11,23 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Default_Member
+Partial Public Class PaymentReport
     
     '''<summary>
-    '''HotelRoom control.
+    '''GridView2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents HotelRoom As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents GridView2 As Global.System.Web.UI.WebControls.GridView
     
     '''<summary>
-    '''CheckIn control.
+    '''SqlDataSource1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents CheckIn As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''CheckOut control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents CheckOut As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
 End Class

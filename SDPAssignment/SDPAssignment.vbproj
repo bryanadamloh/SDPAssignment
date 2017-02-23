@@ -206,6 +206,7 @@
     <Content Include="About-Member.aspx" />
     <Content Include="About.aspx" />
     <Content Include="bookroom.aspx" />
+    <Content Include="CheckInOutReport.aspx" />
     <Content Include="CheckInWithoutReservation.aspx" />
     <Content Include="CheckInWithReservation.aspx" />
     <Content Include="CheckOut.aspx" />
@@ -235,8 +236,10 @@
     <Content Include="ModifyReservation.aspx" />
     <Content Include="ModifyRoom.aspx" />
     <Content Include="Payment.aspx" />
+    <Content Include="PaymentReport.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="roomGallery.aspx" />
+    <Content Include="ReservationReport.aspx" />
     <Content Include="RoomReport.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -273,6 +276,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="SearchRoom.aspx" />
     <Content Include="StaffHome.aspx" />
+    <Content Include="UpdatePayment.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -295,6 +299,13 @@
     </Compile>
     <Compile Include="bookroom.aspx.vb">
       <DependentUpon>bookroom.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CheckInOutReport.aspx.designer.vb">
+      <DependentUpon>CheckInOutReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckInOutReport.aspx.vb">
+      <DependentUpon>CheckInOutReport.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="CheckInWithoutReservation.aspx.designer.vb">
@@ -428,6 +439,13 @@
       <DependentUpon>Payment.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="PaymentReport.aspx.designer.vb">
+      <DependentUpon>PaymentReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentReport.aspx.vb">
+      <DependentUpon>PaymentReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Register.aspx.designer.vb">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
@@ -440,6 +458,13 @@
     </Compile>
     <Compile Include="roomGallery.aspx.vb">
       <DependentUpon>roomGallery.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ReservationReport.aspx.designer.vb">
+      <DependentUpon>ReservationReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationReport.aspx.vb">
+      <DependentUpon>ReservationReport.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="RoomReport.aspx.designer.vb">
@@ -482,6 +507,13 @@
     </Compile>
     <Compile Include="StaffHome.aspx.vb">
       <DependentUpon>StaffHome.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="UpdatePayment.aspx.designer.vb">
+      <DependentUpon>UpdatePayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePayment.aspx.vb">
+      <DependentUpon>UpdatePayment.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>

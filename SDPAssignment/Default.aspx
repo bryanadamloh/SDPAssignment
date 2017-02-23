@@ -80,7 +80,7 @@
                         <asp:TextBox runat="server" ID="CheckOut" CssClass="form-control" />
                     </div>
                 </div>
-                    <a href="bookroom.aspx" class="btn btn-primary btn-lg" type="submit">Book A Room!</a>
+                    <asp:Button runat="server" OnClick="RoomAvailability" CssClass="btn btn-primary" Text="Book A Room" />
              </div>
          </div>
     </div>

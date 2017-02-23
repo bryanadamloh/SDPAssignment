@@ -11,32 +11,41 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Default_Member
+Partial Public Class UpdatePayment
     
     '''<summary>
-    '''HotelRoom control.
+    '''ReservationID control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents HotelRoom As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ReservationID As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''CheckIn control.
+    '''PaymentMethod control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents CheckIn As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents PaymentMethod As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''CheckOut control.
+    '''TotalDue control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents CheckOut As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents TotalDue As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''Amount control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Amount As Global.System.Web.UI.WebControls.TextBox
 End Class

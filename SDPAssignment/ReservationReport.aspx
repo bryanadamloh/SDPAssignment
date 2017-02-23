@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Room Report" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Staff.Master" CodeBehind="RoomReport.aspx.vb" Inherits="SDPAssignment.RoomReport1" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Staff.Master" CodeBehind="ReservationReport.aspx.vb" Inherits="SDPAssignment.RoomReport" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <style>
 h1{
@@ -32,19 +32,22 @@ hr.style-eight:after {
     <div class="container-fluid" style="padding: 90px 50px;">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h1 class="text-center">Room Report</h1>
+                <h1 class="text-center">Reservation Report</h1>
                 <p class="text-center" style="font-size:14px; font-weight:600; margin-top:20px;">
-                    Daily report for hotel rooms
+                    Daily report for customer's reservation
                 </p>
                 <hr class="style-eight" />
 
                 <div class="row col-md-7">
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="RoomNo" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Height="315px" Width="883px">
+                <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="363px" Width="876px" AutoGenerateColumns="False" DataKeyNames="ReservationID" DataSourceID="SqlDataSource1">
                     <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                     <Columns>
-                        <asp:BoundField DataField="RoomNo" HeaderText="RoomNo" InsertVisible="False" ReadOnly="True" SortExpression="RoomNo" />
+                        <asp:BoundField DataField="ReservationID" HeaderText="ReservationID" InsertVisible="False" ReadOnly="True" SortExpression="ReservationID" />
+                        <asp:BoundField DataField="FullName" HeaderText="FullName" SortExpression="FullName" />
                         <asp:BoundField DataField="RoomType" HeaderText="RoomType" SortExpression="RoomType" />
-                        <asp:BoundField DataField="RoomDescription" HeaderText="RoomDescription" SortExpression="RoomDescription" />
+                        <asp:BoundField DataField="CheckInDate" DataFormatString="{0:d}" HeaderText="CheckInDate" SortExpression="CheckInDate" />
+                        <asp:BoundField DataField="CheckOutDate" DataFormatString="{0:d}" HeaderText="CheckOutDate" SortExpression="CheckOutDate" />
+                        <asp:BoundField DataField="Status" HeaderText="Status" SortExpression="Status" />
                     </Columns>
                     <EditRowStyle BackColor="#999999" />
                     <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -57,9 +60,10 @@ hr.style-eight:after {
                     <SortedDescendingCellStyle BackColor="#FFFDF8" />
                     <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
                 </asp:GridView>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [Rooms]"></asp:SqlDataSource>
-                </div>
 
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT [ReservationID], [FullName], [RoomType], [CheckInDate], [CheckOutDate], [Status] FROM [Reservation]"></asp:SqlDataSource>
+
+                </div>
             </div>
         </div>
     </div>
