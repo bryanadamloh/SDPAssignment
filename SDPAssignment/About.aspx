@@ -85,6 +85,9 @@ h4 {
         </p><br>
         <a href="Contact.aspx" class="btn btn-default btn-lg">Contact Us!</a>
     </div>
+      <div class="col-md-4">
+          <img src="Images/timessquare_50.jpg" style="width:602px; height: 746px;" />
+      </div>
   </div>
 </div>
 </asp:Content>

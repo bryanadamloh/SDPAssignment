@@ -83,8 +83,11 @@ h4 {
             All three rooms are in different rates of price and booking is needed to stay in our hotel rooms.
             For more information, visit our Contact Us for more information and inquire our customer service.
         </p><br>
-        <a href="Contact.aspx" class="btn btn-default btn-lg">Contact Us!</a>
+        <a href="Contact-Member.aspx" class="btn btn-default btn-lg">Contact Us!</a>
     </div>
+      <div class="col-md-4">
+          <img src="Images/timessquare_50.jpg" style="width:602px; height: 746px;" />
+      </div>
   </div>
 </div>
 </asp:Content>

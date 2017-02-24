@@ -35,9 +35,9 @@ hr.style-eight:after {
     <div class="container-fluid" style="padding: 90px 50px;">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h1 class="text-center">Check In Without Reservation</h1>
+                <h1 class="text-center">Check In With Reservation</h1>
                 <p class="text-center" style="font-size:14px; font-weight:600; margin-top:20px;">
-                    Managing Check Ins for those customers who just walk in
+                    Managing Check Ins for those customers who booked online
                 </p>
                 <hr class="style-eight" />
 
