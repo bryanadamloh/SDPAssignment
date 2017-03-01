@@ -70,14 +70,14 @@
                 <div class='col-md-4'>
                     <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="CheckIn" CssClass="control-label">Check-In Date</asp:Label>
-                        <asp:TextBox runat="server" ID="CheckIn" CssClass="form-control" TextMode="Date" />
+                        <asp:TextBox runat="server" ID="CheckIn" CssClass="form-control" />
                     </div>
                 </div>
 
                 <div class='col-md-4'>
                     <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="CheckIn" CssClass="control-label">Check-Out Date</asp:Label>
-                        <asp:TextBox runat="server" ID="CheckOut" CssClass="form-control" TextMode="Date" />
+                        <asp:TextBox runat="server" ID="CheckOut" CssClass="form-control" />
                     </div>
                 </div>
                     <asp:Button runat="server" OnClick="RoomAvailability" CssClass="btn btn-primary" Text="Book A Room" />

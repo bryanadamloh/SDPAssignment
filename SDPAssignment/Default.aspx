@@ -145,7 +145,7 @@
                       <li>Small kitchen with Minibar</li>
                       <li>Wifi Available</li>
                     </ul>
-              <a href="bookroom.aspx" class="btn btn-primary" type="submit">Check Availability</a>
+              <a href="Login.aspx" class="btn btn-primary" type="submit">Book!</a>
             </div>
           </div>
 
@@ -160,7 +160,7 @@
                     <li>Small kitchen with Minibar</li>
                     <li>Wifi Available</li>
                 </ul>
-              <a href="bookroom.aspx" class="btn btn-primary" type="submit">Check Availability</a>
+              <a href="Login.aspx" class="btn btn-primary" type="submit">Book!</a>
             </div>
           </div>
 
@@ -175,7 +175,7 @@
                     <li>Small kitchen with Minibar</li>
                     <li>Wifi Available</li>
                 </ul>
-              <a href="bookroom.aspx" class="btn btn-primary" type="submit">Check Availability</a>
+              <a href="Login.aspx" class="btn btn-primary" type="submit">Book!</a>
             </div>
           </div>
         </div>

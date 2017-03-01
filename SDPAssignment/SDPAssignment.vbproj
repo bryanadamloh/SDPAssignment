@@ -231,6 +231,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Gallery-Member.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="ManagePayment.aspx" />
     <Content Include="ModifyReservation.aspx" />
@@ -383,6 +384,13 @@
     </Compile>
     <Compile Include="DeleteRoom.aspx.vb">
       <DependentUpon>DeleteRoom.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gallery-Member.aspx.designer.vb">
+      <DependentUpon>Gallery-Member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gallery-Member.aspx.vb">
+      <DependentUpon>Gallery-Member.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Login.aspx.designer.vb">

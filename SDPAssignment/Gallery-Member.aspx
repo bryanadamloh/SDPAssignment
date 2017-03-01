@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Gallery" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Customer.Master" CodeBehind="roomGallery.aspx.vb" Inherits="SDPAssignment.roomGallery" %>
+﻿<%@ Page Title="Gallery" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site-Member.Master" CodeBehind="Gallery-Member.aspx.vb" Inherits="SDPAssignment.Gallery_Member" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <style>
 .colorgraph{
