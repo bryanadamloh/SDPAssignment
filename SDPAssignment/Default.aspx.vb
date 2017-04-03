@@ -28,14 +28,14 @@ Public Class _Default
 
             While reader.Read()
                 If HotelRoom.SelectedItem.ToString() = reader.Item("RoomType") Then
-                    If reader.Item("CheckInDate") >= CheckIn.Text And CheckOut.Text <= reader.Item("CheckOutDate") Then
+                    If reader.Item("CheckInDate") >= CheckIn.Text.ToString() And CheckOut.Text.ToString() <= reader.Item("CheckOutDate") Then
                         MsgBox("No available room between this period!")
                         reader.Close()
                         Exit While
                     Else
                         While reader1.Read()
                             If HotelRoom.SelectedItem.ToString() = reader1.Item("RoomType") Then
-                                If reader1.Item("CheckIn") >= CheckIn.Text And CheckOut.Text <= reader1.Item("CheckOut") Then
+                                If reader1.Item("CheckIn") >= CheckIn.Text.ToString() And CheckOut.Text.ToString() <= reader1.Item("CheckOut") Then
                                     MsgBox("No available room between this period!")
                                     reader1.Close()
                                     Exit While
