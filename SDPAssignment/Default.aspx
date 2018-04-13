@@ -10,7 +10,7 @@
     background:transparent;
 }
 .bg{
-    background:url(../Images/homeImg.jpg) no-repeat center center;
+    background:url(../Images/mainImg.jpg) no-repeat center center;
     width:100%;
     height:100%;
     padding:150px 90px;
